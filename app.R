@@ -16,10 +16,10 @@ ui <- fluidPage(
   sidebarLayout( 
     sidebarPanel(
       h4("Coordinates"),
-      numericInput("left", "Lowerleft longitude", value = 86.05),
-      numericInput("bottom", "Lowerleft latitude", value = 27.21),
-      numericInput("right", "Upperright longitude", value = 87.81),
-      numericInput("top", "Upperright latitude", value = 28.76),
+      numericInput("left", "Lowerleft longitude", value = -125),
+      numericInput("bottom", "Lowerleft latitude", value = 25.75),
+      numericInput("right", "Upperright longitude", value = -67),
+      numericInput("top", "Upperright latitude", value = 49),
       br(),
       br(),
       
@@ -30,7 +30,7 @@ ui <- fluidPage(
                                  "toner-lines", "toner-lite", "watercolor"), selected = 1),
       br(),
       br(),
-      sliderInput("Zoom", h4("Zoom"), min = 1, max = 15, value = 5, step = 1),
+      sliderInput("Zoom", h4("Zoom"), min = 1, max = 15, value = 7, step = 1),
       br(),
       
       submitButton('View')
