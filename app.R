@@ -1,3 +1,8 @@
+#A Shiny app for myMapp package
+
+#This app shows some functions of myMap package interactively.
+
+
 library(shiny)
 if("devtools" %in% rownames(installed.packages()) == FALSE) {
   install.packages("devtools")}
