@@ -30,7 +30,7 @@ ui <- fluidPage(
                                  "toner-lines", "toner-lite", "watercolor"), selected = 1),
       br(),
       br(),
-      sliderInput("Zoom", h4("Zoom"), min = 1, max = 15, value = 7, step = 1),
+      sliderInput("Zoom", h4("Zoom"), min = 1, max = 15, value = 5, step = 1),
       br(),
       
       submitButton('View')
